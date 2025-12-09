@@ -34,8 +34,8 @@ class MainActivity : ComponentActivity() {
                     color = MaterialTheme.colorScheme.background
                 ) {
                     GreetingText(
-                        message = "Happy Birthday Sam!",
-                        from = "From Emma",
+                        message = "Happy Birthday Almaz!",
+                        from = "From Daniil",
                         modifier = Modifier.padding(8.dp))
                 }
 
@@ -47,11 +47,12 @@ class MainActivity : ComponentActivity() {
 @Composable
 fun GreetingText(message: String, from: String, modifier: Modifier = Modifier) {
     Column (
-        modifier = modifier.padding(8.dp),
-        verticalArrangement = Arrangement.Center) {
+        verticalArrangement = Arrangement.Center,
+        modifier = modifier
+    ) {
         Text(
             text = message,
-            fontSize = 30.sp,
+            fontSize = 100.sp,
             lineHeight = 116.sp,
             textAlign = TextAlign.Center
         )
