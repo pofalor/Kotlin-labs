@@ -23,21 +23,19 @@ import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.composequadrant.ui.theme.ComposeQuadrantTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         setContent {
-            ComposeQuadrantTheme {
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    ComposeQuadrant()
-                }
+            Surface(
+                modifier = Modifier.fillMaxSize(),
+                color = MaterialTheme.colorScheme.background
+            ) {
+                ComposeQuadrant()
             }
+
         }
     }
 }
@@ -107,7 +105,5 @@ private fun ComposableInfoCard(
 @Preview(showBackground = true)
 @Composable
 fun ComposeQuadrantPreview() {
-    ComposeQuadrantTheme {
-        ComposeQuadrant()
-    }
+    ComposeQuadrant()
 }
