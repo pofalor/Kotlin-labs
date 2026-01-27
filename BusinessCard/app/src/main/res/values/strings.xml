@@ -3,4 +3,5 @@
     <string name="full_name">Daniil Gromov</string>
     <string name="tg_username">pofalor</string>
     <string name="phone_number">+78005553535</string>
+    <string name="email">myEmail@domain.com</string>
 </resources>
