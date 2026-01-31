@@ -13,7 +13,7 @@ open class Phone(var isScreenLightOn: Boolean = false){
     }
 }
 
-class FoldablePhone(isScreenLightOn: Boolean = false, var isFolded : Boolean = false) : Phone(isScreenLightOn) {
+class FoldablePhone(var isFolded : Boolean = false) : Phone() {
     override fun switchOn() {
         foldOn()
     }
