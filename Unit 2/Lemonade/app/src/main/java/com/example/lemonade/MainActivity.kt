@@ -17,6 +17,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentSize
 import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
@@ -28,6 +30,7 @@ import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.res.dimensionResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.tooling.preview.Preview
@@ -50,21 +53,38 @@ class MainActivity : ComponentActivity() {
 @Preview
 fun LemonadeApp() {
     var currentPage by remember { mutableIntStateOf(1) }
+    val totalClicks = (2..4).random()
+    var currentClicks = 0
     when(currentPage){
         1 -> ImageWithText(R.drawable.lemon_tree,
             R.string.lemon_tree_descr,
             R.string.lemon_tree,
-            modifier = Modifier
-                .fillMaxSize()
-                .wrapContentSize(Alignment.Center)
-            )
-        2 -> ImageWithText(R.drawable.lemon_squeeze,
-            R.string.squeeze_lemon_descr,
-            R.string.squeeze_lemon,
-            modifier = Modifier
-                .fillMaxSize()
-                .wrapContentSize(Alignment.Center)
-            )
+            onImageClick = {
+                currentPage = 2
+            })
+        2 -> {
+            ImageWithText(
+                R.drawable.lemon_squeeze,
+                R.string.squeeze_lemon_descr,
+                R.string.squeeze_lemon,
+                onImageClick = {
+                    currentClicks++
+                    if(currentClicks == totalClicks)
+                        currentPage = 3
+                })
+        }
+        3 -> ImageWithText(R.drawable.lemon_drink,
+            R.string.drink_lemonade_descr,
+            R.string.drink_lemonade,
+            onImageClick = {
+                currentPage = 4
+            })
+        4 -> ImageWithText(R.drawable.lemon_restart,
+            R.string.empty_glass_descr,
+            R.string.empty_glass,
+            onImageClick = {
+                currentPage = 1
+            })
     }
 }
 
@@ -72,26 +92,25 @@ fun LemonadeApp() {
 fun ImageWithText(imageId : Int,
                   imageDescr: Int,
                   text: Int,
+                  onImageClick: () -> Unit,
                   modifier: Modifier = Modifier){
     Column (
-        modifier = modifier,
+        modifier = modifier
+            .fillMaxSize()
+            .wrapContentSize(Alignment.Center),
         horizontalAlignment = Alignment.CenterHorizontally
     ) {
-        Box(
-            modifier = Modifier
-                .background(
-                    color = Color.LightGray,
-                    shape = RoundedCornerShape(8.dp)
-                )
-                .padding(16.dp) // отступы внутри серого фона
-        ) {
+        Button(onClick = onImageClick,
+            shape = RoundedCornerShape(dimensionResource(R.dimen.image_corner_radius)),
+            colors = ButtonDefaults.buttonColors(containerColor = MaterialTheme.colorScheme.tertiaryContainer))
+        {
             Image(
                 painter = painterResource(imageId),
                 contentDescription = stringResource(imageDescr),
                 modifier = Modifier.size(180.dp)
             )
         }
-        Spacer(modifier = Modifier.height(16.dp))
+        Spacer(modifier = Modifier.height(40.dp))
         Text(stringResource(text))
     }
 }
