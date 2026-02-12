@@ -1,9 +1,11 @@
 package com.example.lemonade
 
+import android.graphics.ImageDecoder
 import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
+import androidx.annotation.DrawableRes
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.background
 import androidx.compose.foundation.layout.Box
@@ -43,14 +45,20 @@ class MainActivity : ComponentActivity() {
 @Composable
 @Preview
 fun LemonadeApp() {
-    ImageWithText(modifier = Modifier
+    ImageWithText(R.drawable.lemon_tree,
+        R.string.lemon_tree_descr,
+        R.string.lemon_tree,
+        modifier = Modifier
         .fillMaxSize()
         .wrapContentSize(Alignment.Center)
     )
 }
 
 @Composable
-fun ImageWithText(modifier: Modifier = Modifier){
+fun ImageWithText(imageId : Int,
+                  imageDescr: Int,
+                  text: Int,
+                  modifier: Modifier = Modifier){
     Column (
         modifier = modifier,
         horizontalAlignment = Alignment.CenterHorizontally
@@ -64,12 +72,12 @@ fun ImageWithText(modifier: Modifier = Modifier){
                 .padding(16.dp) // отступы внутри серого фона
         ) {
             Image(
-                painter = painterResource(R.drawable.lemon_tree),
-                contentDescription = stringResource(R.string.lemon_tree_descr),
+                painter = painterResource(imageId),
+                contentDescription = stringResource(imageDescr),
                 modifier = Modifier.size(180.dp)
             )
         }
         Spacer(modifier = Modifier.height(16.dp))
-        Text(stringResource(R.string.lemon_tree))
+        Text(stringResource(text))
     }
 }
