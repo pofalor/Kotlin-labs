@@ -21,6 +21,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.getValue
+import androidx.compose.runtime.mutableIntStateOf
+import androidx.compose.runtime.remember
+import androidx.compose.runtime.setValue
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
@@ -45,13 +49,23 @@ class MainActivity : ComponentActivity() {
 @Composable
 @Preview
 fun LemonadeApp() {
-    ImageWithText(R.drawable.lemon_tree,
-        R.string.lemon_tree_descr,
-        R.string.lemon_tree,
-        modifier = Modifier
-        .fillMaxSize()
-        .wrapContentSize(Alignment.Center)
-    )
+    var currentPage by remember { mutableIntStateOf(1) }
+    when(currentPage){
+        1 -> ImageWithText(R.drawable.lemon_tree,
+            R.string.lemon_tree_descr,
+            R.string.lemon_tree,
+            modifier = Modifier
+                .fillMaxSize()
+                .wrapContentSize(Alignment.Center)
+            )
+        2 -> ImageWithText(R.drawable.lemon_squeeze,
+            R.string.squeeze_lemon_descr,
+            R.string.squeeze_lemon,
+            modifier = Modifier
+                .fillMaxSize()
+                .wrapContentSize(Alignment.Center)
+            )
+    }
 }
 
 @Composable
