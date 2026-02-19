@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gallery</string>
+    <string name="town_im_descr">Town image</string>
+    <string name="prevImage">Previous</string>
+    <string name="nextImage">Next</string>
+    <string name="forest_bridge_descr">Forest with bridge image</string>
+    <string name="forest_brod_descr">Forest with brod image</string>
+    <string name="forest_river_descr">Forest with river image</string>
+</resources>
