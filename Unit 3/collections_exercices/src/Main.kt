@@ -6,6 +6,7 @@ data class Event(
     val description: String? = null,
     val daypart: Daypart,
     val durationInMinutes: Int,
+
 )
 
 public enum class Daypart {
@@ -25,4 +26,7 @@ fun main() {
     events.forEach {
         println(it)
     }
+
+    val shortEvents = events.filter { it.durationInMinutes < 60 }
+    println("You have ${shortEvents.size} short events.")
 }
