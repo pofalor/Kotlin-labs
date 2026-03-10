@@ -38,5 +38,5 @@ fun main() {
     }
 
     println()
-    println("Last event of the day: ${events[events.size - 1].title}")
+    println("Last event of the day: ${events.last().title}")
 }
