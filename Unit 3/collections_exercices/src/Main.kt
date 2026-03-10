@@ -4,13 +4,29 @@
 data class Event(
     val title: String,
     val description: String? = null,
-    val daypart: String,
+    val daypart: Daypart,
     val durationInMinutes: Int,
 )
 
+public enum class Daypart {
+    MORNING,
+    AFTERNOON,
+    EVENING
+}
+
 fun main() {
-    val event = Event(title="Study Kotlin", description="Commit to studying Kotlin at least 15 minutes per day.", daypart="Evening", durationInMinutes=15)
+    val event1 = Event(title = "Wake up", description = "Time to get up", daypart = Daypart.MORNING, durationInMinutes = 0)
+    val event2 = Event(title = "Eat breakfast", daypart = Daypart.MORNING, durationInMinutes = 15)
+    val event3 = Event(title = "Learn about Kotlin", daypart = Daypart.AFTERNOON, durationInMinutes = 30)
+    val event4 = Event(title = "Practice Compose", daypart = Daypart.AFTERNOON, durationInMinutes = 60)
+    val event5 = Event(title = "Watch latest DevBytes video", daypart = Daypart.AFTERNOON, durationInMinutes = 10)
+    val event6 = Event(title = "Check out latest Android Jetpack library", daypart = Daypart.EVENING, durationInMinutes = 45)
         //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
         // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-    println(event)
+    println(event1)
+    println(event2)
+    println(event3)
+    println(event4)
+    println(event5)
+    println(event6)
 }
