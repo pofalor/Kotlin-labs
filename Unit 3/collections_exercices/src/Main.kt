@@ -39,4 +39,12 @@ fun main() {
 
     println()
     println("Last event of the day: ${events.last().title}")
+
+    println()
+    val durationOfEvent = if (events[0].durationInMinutes < 60) {
+        "short"
+    } else {
+        "long"
+    }
+    println("Duration of first event of the day: $durationOfEvent")
 }
