@@ -21,7 +21,7 @@ plugins {
 
 android {
     namespace = "com.example.woof"
-    compileSdk = 33
+    compileSdk = 36
 
     defaultConfig {
         applicationId = "com.example.woof"
@@ -57,7 +57,7 @@ android {
         compose = true
     }
     composeOptions {
-        kotlinCompilerExtensionVersion = "1.4.7"
+        kotlinCompilerExtensionVersion = "1.5.4"
     }
     packaging {
         resources {
@@ -78,6 +78,7 @@ dependencies {
     implementation("androidx.core:core-ktx:1.10.1")
     implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.1")
     implementation("androidx.compose.material:material-icons-extended")
+    implementation("androidx.compose.animation:animation-android:1.10.5")
 
     debugImplementation("androidx.compose.ui:ui-test-manifest")
     debugImplementation("androidx.compose.ui:ui-tooling")
