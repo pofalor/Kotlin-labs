@@ -53,4 +53,85 @@
     <string name="tip_10_title">Коллаж</string>
     <string name="tip_10_description">Вырежьте из старых журналов образы и создайте коллаж желаний или настроения. Это визуализация ваших мечтаний и целей.</string>
     <string name="tip_10_affirmation">Визуализируй свои мечты</string>
+
+    <string name="tip_11_title">Ритм</string>
+    <string name="tip_11_description">Выделите 20 минут в одно и то же время на творчество. Создайте ритуал (например, чашка чая + скетчбук). Регулярность важнее интенсивности.</string>
+    <string name="tip_11_affirmation">Постоянство ведет к мастерству</string>
+
+    <string name="tip_12_title">Вторая жизнь вещей</string>
+    <string name="tip_12_description">Возьмите старую коробку, банку или ненужную одежду и превратите это в арт-объект. Дайте старым вещам новую жизнь через творчество.</string>
+    <string name="tip_12_affirmation">В каждой вещи скрыта красота</string>
+
+    <string name="tip_13_title">Тень и свет</string>
+    <string name="tip_13_description">Нарисуйте любой предмет, фокусируясь не на контуре, а на контрасте света и тени. Уберите линии, работайте только пятнами.</string>
+    <string name="tip_13_affirmation">Свет и тень создают объем</string>
+
+    <string name="tip_14_title">Ошибка как искусство</string>
+    <string name="tip_14_description">Если вы случайно поставили кляксу или ошиблись линией — обыграйте это. Сделайте ошибку главным героем работы. Иногда счастливые случайности рождают шедевры.</string>
+    <string name="tip_14_affirmation">Ошибки — это новые возможности</string>
+
+    <string name="tip_15_title">Маленький формат</string>
+    <string name="tip_15_description">Нарисуйте что-то на листе размером 5x5 см. Маленький формат снижает страх перед «чистым листом» и делает процесс менее intimidating.</string>
+    <string name="tip_15_affirmation">Начинай с малого</string>
+
+    <string name="tip_16_title">Вдохновение едой</string>
+    <string name="tip_16_description">Красиво нарежьте фрукты или оформите завтрак. Кулинария — это быстрое и вкусное творчество, доступное каждому.</string>
+    <string name="tip_16_affirmation">Творчество на кухне</string>
+
+    <string name="tip_17_title">Текст и каллиграфия</string>
+    <string name="tip_17_description">Напишите красивым почерком любимую цитату. Обратите внимание на форму букв, а не на смысл. Каллиграфия — это медитация.</string>
+    <string name="tip_17_affirmation">Красота в каждой букве</string>
+
+    <string name="tip_18_title">Монохром</string>
+    <string name="tip_18_description">Создайте работу, используя только один цвет (разные его оттенки). Это учит работе с тоном и нюансами цвета.</string>
+    <string name="tip_18_affirmation">Один цвет — миллион оттенков</string>
+
+    <string name="tip_19_title">Сотрудничество</string>
+    <string name="tip_19_description">Позовите друга (или ребенка). Начните рисунок, передайте ему, пусть продолжит он. Совместное творчество объединяет и вдохновляет.</string>
+    <string name="tip_19_affirmation">Вместе веселее</string>
+
+    <string name="tip_20_title">Повторение</string>
+    <string name="tip_20_description">Выберите простой узор (паттерн) и повторяйте его 10 раз. Медитация через монотонность успокаивает ум и развивает точность.</string>
+    <string name="tip_20_affirmation">В повторении рождается мастерство</string>
+
+    <!-- Декада 3: Рефлексия и выход в свет (Дни 21-30) -->
+    <string name="tip_21_title">Мусорное вдохновение</string>
+    <string name="tip_21_description">Найдите красивый мусор (красивую этикетку, сухой лист, старую шестеренку) и сделайте из него натюрморт или арт-объект.</string>
+    <string name="tip_21_affirmation">Красота в неожиданном</string>
+
+    <string name="tip_22_title">Смена ракурса</string>
+    <string name="tip_22_description">Нарисуйте привычный предмет (чайник, телефон) снизу вверх или сверху вниз, как будто вы смотрите на него впервые. Новый взгляд на привычное.</string>
+    <string name="tip_22_affirmation">Измени угол зрения</string>
+
+    <string name="tip_23_title">Свободное письмо</string>
+    <string name="tip_23_description">Установите таймер на 10 минут. Пишите все, что приходит в голову, не останавливаясь и не редактируя. Поток сознания.</string>
+    <string name="tip_23_affirmation">Пиши свободно</string>
+
+    <string name="tip_24_title">Выход в свет</string>
+    <string name="tip_24_description">Сходите в художественную галерею или просто в книжный магазин в отдел искусства. Ищите то, что цепляет эмоционально, не анализируйте.</string>
+    <string name="tip_24_affirmation">Ищи вдохновение вокруг</string>
+
+    <string name="tip_25_title">Наброски в кафе</string>
+    <string name="tip_25_description">Возьмите скетчбук в кафе. Зарисуйте людей за соседним столиком (они обычно не против быстрых набросков). Живые линии и динамика.</string>
+    <string name="tip_25_affirmation">Рисуй жизнь</string>
+
+    <string name="tip_26_title">Линия без отрыва</string>
+    <string name="tip_26_description">Нарисуйте портрет или предмет, не отрывая ручки от бумаги. Результат будет живым, динамичным и неповторимым.</string>
+    <string name="tip_26_affirmation">Одна линия — одна история</string>
+
+    <string name="tip_27_title">Абстракция эмоций</string>
+    <string name="tip_27_description">Вспомните сильную эмоцию (радость, грусть). Попробуйте выразить её линиями и цветом, не создавая конкретных предметов.</string>
+    <string name="tip_27_affirmation">Чувства в цвете</string>
+
+    <string name="tip_28_title">Декомпозиция</string>
+    <string name="tip_28_description">Разберите старые часы или сломанный механизм. Используйте детали для создания украшения или композиции. Новое из старого.</string>
+    <string name="tip_28_affirmation">Смотри глубже</string>
+
+    <string name="tip_29_title">Подарок своими руками</string>
+    <string name="tip_29_description">Сделайте маленькую открытку или зин (мини-книжку) для близкого человека. Создавайте с любовью и для любви.</string>
+    <string name="tip_29_affirmation">Творчество — это любовь</string>
+
+    <string name="tip_30_title">Выставка</string>
+    <string name="tip_30_description">Разложите все работы за месяц. Сфотографируйте их. Похвалите себя за то, что уделили время себе и своему творчеству. Вы сделали это!</string>
+    <string name="tip_30_affirmation">Ты — творец!</string>
 </resources>
