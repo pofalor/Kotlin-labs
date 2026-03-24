@@ -24,9 +24,9 @@ private val LightColorScheme = lightColorScheme(
     primary = Color(0xFF6200EE),
     secondary = Color(0xFF03DAC6),
     tertiary = Color(0xFFCF6679),
-    background = Color(0xFFFFFBFE),
-    surface = Color(0xFFFFFBFE),
-    surfaceVariant = Color(0xFFE7E0EC),
+    background = Color(0xFFF5F5F5),  // Изменено с белого на светло-серый
+    surface = Color(0xFFFFFFFF),      // Карточки остаются белыми
+    surfaceVariant = Color(0xFFF0F0F0),
     onPrimary = Color.White,
     onSecondary = Color.Black,
     onBackground = Color(0xFF1C1B1F),
@@ -44,7 +44,7 @@ fun ThirtyDaysTheme(
 
     MaterialTheme(
         colorScheme = colorScheme,
-        typography = Typography(),
+        typography = AppTypography,
         content = content
     )
 }

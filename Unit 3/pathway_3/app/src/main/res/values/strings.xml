@@ -1,3 +1,56 @@
 <resources>
-    <string name="app_name">30_days</string>
+    <string name="app_name">30 дней творчества</string>
+    <string name="splash_title">30 дней\nосознанного творчества</string>
+    <string name="splash_subtitle">День за днём к вдохновению</string>
+
+    <!-- Screen titles -->
+    <string name="app_title">30 дней творчества</string>
+    <string name="scroll_to_top">Наверх</string>
+    <string name="expand">Подробнее</string>
+    <string name="collapse">Свернуть</string>
+    <string name="close">Закрыть</string>
+
+    <!-- Day prefix -->
+    <string name="day_prefix">День %d</string>
+
+    <!-- Tips content -->
+    <string name="tip_1_title">Организуйте уголок</string>
+    <string name="tip_1_description">Найдите 15 минут, чтобы очистить рабочее место от лишнего. Творчество начинается с ясности пространства. Уберите все, что отвлекает, оставьте только необходимые материалы. Чистое пространство = чистый ум.</string>
+    <string name="tip_1_affirmation">Порядок вокруг создает порядок в голове</string>
+
+    <string name="tip_2_title">Утренние страницы</string>
+    <string name="tip_2_description">Напишите три страницы от руки, не задумываясь о стиле. Просто выгрузите мысли из головы на бумагу. Не оценивайте, не редактируйте, просто пишите все, что приходит в голову.</string>
+    <string name="tip_2_affirmation">Ваши мысли — это первый материал для творчества</string>
+
+    <string name="tip_3_title">Наблюдение</string>
+    <string name="tip_3_description">Выйдите на улицу и найдите 10 предметов определенного цвета (например, красного). Это тренирует фокус внимания и учит замечать детали, которые обычно ускользают.</string>
+    <string name="tip_3_affirmation">Внимательность — мать вдохновения</string>
+
+    <string name="tip_4_title">Смена материала</string>
+    <string name="tip_4_description">Если вы работаете в цифре, возьмите глину или краски. Если традиционно — попробуйте планшет. Тактильные ощущения будят новые нейронные связи и расширяют творческий диапазон.</string>
+    <string name="tip_4_affirmation">Новый материал = новый взгляд</string>
+
+    <string name="tip_5_title">10 идей за 10 минут</string>
+    <string name="tip_5_description">Не оценивая качество, запишите 10 идей на тему «Что я могу создать сегодня». Количество переходит в качество. Первые идеи будут банальными, но пятая и дальше — настоящие жемчужины.</string>
+    <string name="tip_5_affirmation">Гениальность скрывается за количеством</string>
+
+    <string name="tip_6_title">Работа с ограничениями</string>
+    <string name="tip_6_description">Используйте только 3 цвета или только квадратные формы. Ограничения парадоксальным образом освобождают фантазию и заставляют мыслить нестандартно.</string>
+    <string name="tip_6_affirmation">Свобода рождается из ограничений</string>
+
+    <string name="tip_7_title">Вдохновение у мастеров</string>
+    <string name="tip_7_description">Найдите одного художника или дизайнера, чей стиль вам откликается. Сделайте 3 быстрых наброска в его манере. Не копируйте, изучайте технику и подход.</string>
+    <string name="tip_7_affirmation">Учись у лучших, чтобы найти свой путь</string>
+
+    <string name="tip_8_title">Тишина</string>
+    <string name="tip_8_description">Работайте 30 минут в полной тишине, без музыки и подкастов. Дайте своим мыслям звучать громче. Тишина помогает услышать свой внутренний голос.</string>
+    <string name="tip_8_affirmation">В тишине рождаются лучшие идеи</string>
+
+    <string name="tip_9_title">Несовершенство</string>
+    <string name="tip_9_description">Создайте что-то намеренно «некрасивое» или сломанное. Освободитесь от перфекционизма. Совершенство — враг прогресса.</string>
+    <string name="tip_9_affirmation">Красота в несовершенстве</string>
+
+    <string name="tip_10_title">Коллаж</string>
+    <string name="tip_10_description">Вырежьте из старых журналов образы и создайте коллаж желаний или настроения. Это визуализация ваших мечтаний и целей.</string>
+    <string name="tip_10_affirmation">Визуализируй свои мечты</string>
 </resources>
