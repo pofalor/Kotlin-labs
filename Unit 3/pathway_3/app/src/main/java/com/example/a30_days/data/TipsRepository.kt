@@ -181,19 +181,30 @@ class TipsRepository {
             R.drawable.photo_14,
             R.drawable.photo_15,
             R.drawable.photo_16,
+            R.drawable.photo_17,
+            R.drawable.photo_18,
+            R.drawable.photo_19,
+            R.drawable.photo_20,
+            R.drawable.photo_21,
+            R.drawable.photo_22,
+            R.drawable.photo_23,
+            R.drawable.photo_24,
+            R.drawable.photo_25,
+            R.drawable.photo_26,
+            R.drawable.photo_27,
+            R.drawable.photo_28,
+            R.drawable.photo_29,
+            R.drawable.photo_30
         )
 
         for (i in 0 until 30) {
-            val tipsIndex = i % tipsData.size
-            val imageIndex = i % imageResources.size
-            val (titleRes, descriptionRes, affirmationRes) = tipsData[tipsIndex]
-
+            val (titleRes, descriptionRes, affirmationRes) = tipsData[i]
             tips.add(
                 Tip(
                     day = i + 1,
                     titleRes = titleRes,
                     descriptionRes = descriptionRes,
-                    imageRes = imageResources[imageIndex],
+                    imageRes = imageResources[i],
                     affirmationRes = affirmationRes
                 )
             )
