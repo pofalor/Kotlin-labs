@@ -24,13 +24,14 @@ private val LightColorScheme = lightColorScheme(
     primary = Color(0xFF6200EE),
     secondary = Color(0xFF03DAC6),
     tertiary = Color(0xFFCF6679),
-    background = Color(0xFFF5F5F5),  // Изменено с белого на светло-серый
-    surface = Color(0xFFFFFFFF),      // Карточки остаются белыми
-    surfaceVariant = Color(0xFFF0F0F0),
+    background = Color(0xFFF8F9FA),        // Светло-серый фон экрана
+    surface = Color(0xFFFFFFFF),            // Белый цвет для карточек
+    surfaceVariant = Color(0xFFF5F5F5),     // Светло-серый для вариантов
     onPrimary = Color.White,
     onSecondary = Color.Black,
     onBackground = Color(0xFF1C1B1F),
     onSurface = Color(0xFF1C1B1F),
+    onSurfaceVariant = Color(0xFF5F5F5F),   // Темно-серый для текста
     primaryContainer = Color(0xFFEADDFF),
     secondaryContainer = Color(0xFF03DAC6).copy(alpha = 0.2f)
 )

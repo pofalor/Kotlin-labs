@@ -54,7 +54,7 @@ private fun getPreviewTips(): List<Tip> {
             day = 2,
             titleRes = R.string.tip_2_title,
             descriptionRes = R.string.tip_2_description,
-            imageRes = R.drawable.photo_1,  // Временно используем photo_1, пока нет других
+            imageRes = R.drawable.photo_2,
             affirmationRes = R.string.tip_2_affirmation
         )
     )

@@ -64,14 +64,20 @@ class TipsRepository {
         // Повторяем изображения циклически, чтобы покрыть 30 дней
         val imageResources = listOf(
             R.drawable.photo_1,      // photo_1.jpg
-//            R.drawable.photo_2,
-//            R.drawable.photo_3,
-//            R.drawable.photo_4,
-//            R.drawable.photo_5,
-            // Добавьте остальные изображения по мере добавления
-            // R.drawable.photo_6,
-            // R.drawable.photo_7,
-            // ...
+            R.drawable.photo_2,
+            R.drawable.photo_3,
+            R.drawable.photo_4,
+            R.drawable.photo_5,
+            R.drawable.photo_6,
+            R.drawable.photo_7,
+            R.drawable.photo_8,
+            R.drawable.photo_9,
+            R.drawable.photo_10,
+            R.drawable.photo_11,
+            R.drawable.photo_12,
+            R.drawable.photo_13,
+            R.drawable.photo_14,
+            R.drawable.photo_15,
         )
 
         for (i in 0 until 30) {
