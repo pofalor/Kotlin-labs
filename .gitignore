@@ -24,6 +24,7 @@ out/
 *.aab
 *.ap_
 *.aab
+*.hprof
 
 # Local configuration files
 *.orig

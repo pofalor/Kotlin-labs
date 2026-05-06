@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Путеводитель по Казани</string>
+
+    <string name="category_cafes">Кофейни</string>
+    <string name="category_restaurants">Рестораны</string>
+    <string name="category_kids">Места для детей</string>
+    <string name="category_parks">Парки</string>
+    <string name="category_malls">Торговые центры</string>
+</resources>
+
