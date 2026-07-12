@@ -14,56 +14,91 @@
 - Android Gradle Plugin 8.x (Gradle wrapper в каждом проекте)
 - minSdk 24, compileSdk/targetSdk 35
 - ViewModel, StateFlow, Navigation Compose (юнит 4)
-- JUnit — модульные и инструментальные тесты
+- JUnit, Compose UI Testing — модульные и инструментальные тесты
 
 ## Структура репозитория
 
 ### Unit 1 — основы Kotlin и первые Compose-приложения
 
-| Проект | Описание |
+| Проект | Что изучается |
 |---|---|
-| `greeting_card` | Первое приложение на Compose |
-| `HappyBirthday` | Поздравительная открытка: текст и изображение |
-| `BusinessCard` | Визитная карточка |
-| `ComposeArticle` | Экран статьи о Compose |
-| `ComposeQuadrant` | Экран из четырёх квадрантов |
-| `ComposeSuccess` | Экран завершённых задач |
-| `example` | Примеры кода на Kotlin |
+| `example` | Основы Kotlin: `val`/`var`, вывод типов, строковые шаблоны, функции |
+| `greeting_card` | Первый проект на Compose: `@Composable`-функции, `@Preview`, дерево композиции |
+| `HappyBirthday` | Открытка: `Text` и `Image`, компоновка через `Column`/`Box`, модификаторы (`Modifier.padding`, выравнивание), строковые ресурсы |
+| `ComposeArticle` | Экран статьи: вертикальная компоновка `Column`, `painterResource`, параметры текста (`textAlign`, `fontSize`) |
+| `ComposeSuccess` | Экран завершённых задач: центрирование контента, комбинирование `Image` + `Text` |
+| `ComposeQuadrant` | Экран из четырёх квадрантов: вложенные `Row`/`Column`, распределение места через `Modifier.weight` |
+| `BusinessCard` | Визитка — самостоятельная вёрстка экрана: композиция переиспользуемых composable-функций, иконки Material |
 
-### Unit 2 — интерактивность и основы Kotlin
+### Unit 2 — интерактивность и основы ООП в Kotlin
 
-| Проект | Описание |
+**Android-приложения:**
+
+| Проект | Что изучается |
 |---|---|
-| `DiceRoller` | Бросок кубика: кнопки и состояние |
-| `Lemonade` | Приготовление лимонада по шагам |
-| `Gallery` | Галерея изображений (Art Space) |
-| `basic-...-tip-calculator-starter` | Калькулятор чаевых: поля ввода и вычисления |
-| `cinema_price`, `temperature_converter`, `song_catalog`, `special_auction`, `foldable_phone`, `internet_profile`, `mobile_notifications`, `example_class`, `test_fundamentals`, `traffic light`, `traffic color with when value` | Консольные упражнения: классы, наследование, лямбды, `when` и др. |
+| `DiceRoller` | Состояние в Compose: `remember` + `mutableStateOf`, рекомпозиция, обработка нажатий `Button` |
+| `Lemonade` | Приложение-«автомат состояний»: переключение шагов через `when`, кликабельные изображения, связка состояния и ресурсов |
+| `Gallery` | Галерея (Art Space): хранение индекса в состоянии, навигация «вперёд/назад» кнопками, композиция экрана |
+| `basic-...-tip-calculator-starter` | Калькулятор чаевых: `OutlinedTextField`, паттерн **state hoisting** (подъём состояния), `KeyboardOptions`, форматирование чисел. Тесты: модульные (`TipCalculatorTests`, JUnit) и UI-тесты Compose (`TipUITests`, `createComposeRule`) |
 
-### Unit 3 — списки, коллекции и Material Design
+**Консольные упражнения (основы Kotlin):**
 
-| Проект | Описание |
+| Проект | Что изучается |
 |---|---|
-| `basic-...-affirmations-starter` / `-intermediate` | Affirmations: списки и карточки (LazyColumn) |
-| `Courses` | Сетка курсов (LazyVerticalGrid) |
-| `SuperheroApp` | Список супергероев: Material-темизация |
-| `pathway_3` (WoofApp) | Woof: Material Design 3, анимации |
-| `collections_exercices`, `test_colors` | Консольные упражнения по коллекциям |
+| `test_fundamentals` | Операторы сравнения, проверки `in` и `is` |
+| `traffic light`, `traffic color with when value` | Условная логика: `when` по значению, ветка `else` |
+| `cinema_price` | `when` с диапазонами (`in 0..12`), возврат результата выражения |
+| `mobile_notifications` | Функции с параметрами, `if`/`else` |
+| `example_class` | ООП: открытые классы и наследование (`open`/`override`), видимость сеттера (`protected set`), делегированные свойства (`ReadWriteProperty`) |
+| `song_catalog` | Класс с вычисляемым свойством (кастомный `get()`) |
+| `foldable_phone` | Наследование и переопределение поведения, параметры конструктора со значениями по умолчанию |
+| `internet_profile` | Null-безопасность: nullable-типы, безопасные вызовы `?.`, проверки на `null` |
+| `special_auction` | Nullable-объекты как параметры функций |
+| `temperature_converter` | Функции высшего порядка и лямбды: параметр типа `(Double) -> Double` |
 
-### Unit 4 — архитектура и навигация
+### Unit 3 — коллекции, списки и Material Design
 
-| Проект | Описание |
+**Консольные упражнения:**
+
+| Проект | Что изучается |
 |---|---|
-| **pathway_1** | |
-| `basic-...-dessert-clicker-starter` | Dessert Clicker: жизненный цикл Activity |
-| `basic-...-unscramble-starter` / `-main` | Unscramble: ViewModel, StateFlow, модульные тесты |
-| **pathway_2** | |
-| `basic-...-cupcake-starter` | Cupcake: Navigation Compose, тесты навигации |
-| `basic-...-lunch-tray-main` | Lunch Tray: заказ блюд с навигацией по экранам |
-| **pathway_3** | |
-| `basic-...-reply-app-main` / `-nav-update` | Reply: адаптивные макеты под разные размеры экрана |
-| `basic-...-sports-main` | Sports: адаптивная навигация (список/детали) |
-| `Kazan` | Собственный проект: путеводитель по Казани с рекомендациями по категориям (MVVM: data / domain / ui / viewmodel) |
+| `collections_exercices` | `data class`, `enum class`, свойства-расширения, операции над коллекциями: `filter`, `groupBy`, `sortedBy`, `forEach` |
+| `test_colors` | Обобщённые (generic) функции-расширения для `List<T>` |
+
+**Android-приложения:**
+
+| Проект | Что изучается |
+|---|---|
+| `basic-...-affirmations-starter` / `-intermediate` | Списки: `LazyColumn`, карточки `Card`, модель `data class` с аннотациями `@StringRes`/`@DrawableRes`, слой данных `Datasource` |
+| `Courses` | Сетки: `LazyVerticalGrid`, адаптивные ячейки, разделение на `model`/`data`/UI |
+| `SuperheroApp` | Темизация Material Design 3: собственные `Color`, `Shape`, `Typography` (кастомные шрифты), `Scaffold` + `TopAppBar`, объект-репозиторий с данными |
+| `pathway_3` (приложение «30 дней») | Собственный проект — 30 советов: сплэш-экран, диалог деталей (`Dialog`), анимация разворачивания карточки (`animateContentSize` + `tween`), вынос размеров в тему (`Dimensions`), паттерн Repository |
+| `pathway_3/WoofApp` | Woof: комплексная тема Material 3 (цвета, формы, типографика), `Scaffold`/`TopAppBar`, пружинная анимация раскрытия карточки (`animateContentSize` + `spring`) |
+
+### Unit 4 — архитектура приложения и навигация
+
+**pathway 1 — жизненный цикл и ViewModel:**
+
+| Проект | Что изучается |
+|---|---|
+| `basic-...-dessert-clicker-starter` | Жизненный цикл Activity: колбэки `onStart`/`onResume`/`onPause` и др., логирование в Logcat (`Log.d`), затем рефакторинг — вынос состояния в `ViewModel` + `UiState` |
+| `basic-...-unscramble-starter` / `-main` | Игра «Собери слово»: архитектура **MVVM** — `ViewModel`, `StateFlow`/`MutableStateFlow`, `collectAsState`, неизменяемый `UiState` (`data class` + `copy`), `AlertDialog`. В `-main` — модульные тесты `GameViewModelTest`: схема success/error/boundary case |
+
+**pathway 2 — навигация между экранами:**
+
+| Проект | Что изучается |
+|---|---|
+| `basic-...-cupcake-starter` | Заказ кексов: **Navigation Compose** — `NavHost`, `NavController`, маршруты через `enum`, общий для всех экранов `OrderViewModel` (паттерн shared ViewModel), кнопка «назад» в `AppBar`, отправка заказа через неявный `Intent`. Тесты навигации: `CupcakeScreenNavigationTest`, `CupcakeOrderScreenTest`, свои расширения для тестов (`ComposeRuleExtensions`) |
+| `basic-...-lunch-tray-main` | Заказ обеда — самостоятельное закрепление: граф навигации с нуля, переиспользуемый экран меню (`BaseMenuScreen`), `OrderViewModel` с подсчётом итога |
+
+**pathway 3 — адаптивные макеты:**
+
+| Проект | Что изучается |
+|---|---|
+| `basic-...-reply-app-main` | Почтовый клиент Reply: адаптация под размер экрана — `calculateWindowSizeClass`, `WindowWidthSizeClass`, разные типы навигации (нижняя панель / `NavigationRail` / постоянный drawer) |
+| `basic-...-reply-app-nav-update` | Вариант Reply с доработанной адаптивной навигацией и раздельными экранами списка/деталей |
+| `basic-...-sports-main` | Sports: адаптивный паттерн **list-detail** — на широких экранах список и детали одновременно, обработка `BackHandler`, `ViewModel` + `UiState` |
+| `Kazan` | Собственный итоговый проект — путеводитель по Казани: слоистая архитектура `data` / `domain` / `ui` / `viewmodel`, паттерн **Repository** (интерфейс `RecommendationsRepository` + in-memory реализация), MVVM со `StateFlow`, `Scaffold`, `LazyColumn`, экраны категорий и рекомендаций |
 
 ## Как запустить
 
@@ -71,7 +106,7 @@
 
 **Консольные упражнения.** Папки со структурой `src`/`out` открываются в IntelliJ IDEA; запуск — через функцию `main` нужного файла.
 
-**Тесты.** В проектах юнита 4 (Unscramble, Cupcake) тесты запускаются из Android Studio или командой:
+**Тесты.** В проектах с тестами (Tip Calculator, Unscramble, Cupcake) они запускаются из Android Studio или командой:
 
 ```bash
 ./gradlew test           # модульные тесты
